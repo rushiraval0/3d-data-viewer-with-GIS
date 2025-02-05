@@ -1,0 +1,61 @@
+@import "variables";
+
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+@import "./layout/sidebar";
+@import "./layout/container";
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.controls-overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 8px;
+
+  .control-group {
+    margin-bottom: 15px;
+
+    label {
+      color: white;
+      margin-right: 10px;
+    }
+
+    .form-range {
+      width: 200px;
+    }
+  }
+
+  .btn-group {
+    width: 100%;
+
+    .btn {
+      font-size: 0.8rem;
+      padding: 5px 10px;
+    }
+  }
+}
+
+.sidebarArea {
+  .form-range::-webkit-slider-thumb {
+    background: #4b7cf3;
+  }
+  .btn-group {
+    .btn {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+}

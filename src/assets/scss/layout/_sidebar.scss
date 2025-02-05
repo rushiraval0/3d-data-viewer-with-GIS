@@ -1,0 +1,44 @@
+.sidebarArea {
+  flex-shrink: 0;
+  width: $sidebarWidth;
+  background-color: $sidebarColor;
+  .sidenav-bg:hover {
+    background-color: $gray-100;
+    border-radius: $border-radius;
+  }
+  .sidenav-bg .active {
+    background-color: $info;
+    border-radius: $border-radius;
+    color: white;
+  }
+}
+
+.sidebar-title {
+  color: #6c757d;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sidenav-bg {
+  transition: all 0.3s;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .sidebarArea {
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    z-index: 1;
+    margin-left: -$sidebarWidth;
+    transition: 0.2s ease-in;
+    &.showSidebar {
+      margin-left: 0px;
+    }
+  }
+}
