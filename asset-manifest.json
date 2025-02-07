@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/3d-data-viewer-with-GIS/static/css/main.05a9d472.css",
-    "main.js": "/3d-data-viewer-with-GIS/static/js/main.e4f1e135.js",
+    "main.css": "/3d-data-viewer-with-GIS/static/css/main.97889c53.css",
+    "main.js": "/3d-data-viewer-with-GIS/static/js/main.22ac2b97.js",
     "static/js/488.11080e35.chunk.js": "/3d-data-viewer-with-GIS/static/js/488.11080e35.chunk.js",
     "static/media/bootstrap-icons.woff?": "/3d-data-viewer-with-GIS/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
     "static/media/bootstrap-icons.woff2?": "/3d-data-viewer-with-GIS/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
     "index.html": "/3d-data-viewer-with-GIS/index.html",
-    "main.05a9d472.css.map": "/3d-data-viewer-with-GIS/static/css/main.05a9d472.css.map",
-    "main.e4f1e135.js.map": "/3d-data-viewer-with-GIS/static/js/main.e4f1e135.js.map",
+    "main.97889c53.css.map": "/3d-data-viewer-with-GIS/static/css/main.97889c53.css.map",
+    "main.22ac2b97.js.map": "/3d-data-viewer-with-GIS/static/js/main.22ac2b97.js.map",
     "488.11080e35.chunk.js.map": "/3d-data-viewer-with-GIS/static/js/488.11080e35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05a9d472.css",
-    "static/js/main.e4f1e135.js"
+    "static/css/main.97889c53.css",
+    "static/js/main.22ac2b97.js"
   ]
 }
