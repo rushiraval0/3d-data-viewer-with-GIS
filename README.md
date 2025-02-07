@@ -1,6 +1,6 @@
 # 3D Model and GIS Visualizer  
 
-<img src="dashboard-image.jpg" alt="thumbnail" width="50%">
+<img src="dashboard-image.jpg" alt="thumbnail" width="90%">
 
 ## Overview  
 A web-based application to visualize 3D point cloud data and GeoJSON maps. Users can upload .pcd, .xyz, and .geojson files to interactively explore and manipulate 3D models and GIS data.
