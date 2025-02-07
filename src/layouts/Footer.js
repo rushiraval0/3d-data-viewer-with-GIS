@@ -6,6 +6,16 @@ const Footer = () => {
   const { activities, clearActivities } = useActivity();
   const [isExpanded, setIsExpanded] = React.useState(false);
 
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const Handletoggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const showMobilemenu = () => {
+    document.getElementById("sidebarArea").classList.toggle("showSidebar");
+  };
+
   return (
     <Navbar
       color="primary"
@@ -20,6 +30,16 @@ const Footer = () => {
     >
       <div className="container-fluid">
         <div className="d-flex justify-content-between align-items-center w-100">
+          <div className="d-flex justify-content-between w-10">
+            <Button
+              color="primary"
+              className=" d-lg-none"
+              onClick={() => showMobilemenu()}
+            >
+              <i className="bi bi-list"></i>
+            </Button>
+          </div>
+
           <Button
             color="light"
             size="sm"

@@ -2,7 +2,14 @@ import React, { useMemo, useEffect, useState } from "react";
 import { useLoader, useThree } from "@react-three/fiber";
 import { Html } from "@react-three/drei";
 import { PCDLoader } from "three/examples/jsm/loaders/PCDLoader";
-import { Box3, Vector3, BufferAttribute, Color, BufferGeometry } from "three";
+import {
+  Box3,
+  Vector3,
+  BufferAttribute,
+  Color,
+  BufferGeometry,
+  Matrix4,
+} from "three";
 import { interpolateTurbo } from "d3-scale-chromatic";
 
 const PCDViewer = ({ url, pointSize, colorMode }) => {
@@ -118,13 +125,8 @@ const PCDViewer = ({ url, pointSize, colorMode }) => {
         geometry.attributes.position
       );
       const center = box.getCenter(new Vector3());
-      const size = box.getSize(new Vector3()).length();
 
-      camera.position.set(
-        center.x + size * 0.5,
-        center.y + size * 0.5,
-        center.z + size
-      );
+      camera.position.set(0, 0, 5);
       camera.lookAt(center);
       camera.updateProjectionMatrix();
     }

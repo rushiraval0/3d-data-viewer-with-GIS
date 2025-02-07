@@ -28,21 +28,27 @@ const PointCloudViewer = ({ data, pointSize, colorMode }) => {
 
   if (!data) {
     return (
-      <Canvas style={{ width: "100%", height: "100%" }}>
+      <Canvas
+        style={{
+          width: "100%",
+          height: "100%",
+          backgroundColor: "#0D1D44", // Deep navy blue
+        }}
+      >
         <Html>
-          <span>Upload a point cloud file to view</span>
+          <span style={{ color: "white" }}>
+            Upload a point cloud file to view
+          </span>
         </Html>
       </Canvas>
     );
   }
 
   const fileExtension = (() => {
-    // Try metadata filename first
     if (data.metadata?.name) {
       return data.metadata.name.split(".").pop()?.toLowerCase();
     }
 
-    // Try URL filename
     const urlParts = data.url.split(".");
     if (urlParts.length > 1) {
       return urlParts.pop()?.toLowerCase();
@@ -62,8 +68,16 @@ const PointCloudViewer = ({ data, pointSize, colorMode }) => {
           position: [0, 0, 5],
           up: [0, 0, 1],
         }}
-        style={{ width: "100%", height: "100%" }}
+        style={{
+          width: "100%",
+          height: "100%",
+          backgroundColor: "#0D1D44", // Deep navy blue
+        }}
+        gl={{
+          clearColor: 0x0d1d44, // Ensure WebGL also uses the same background
+        }}
       >
+        <color attach="background" args={["#0D1D44"]} />
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
         <OrbitControls

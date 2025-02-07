@@ -101,13 +101,9 @@ const XYZViewer = ({ url, pointSize, colorMode }) => {
         processedGeometry.attributes.position
       );
       const center = box.getCenter(new Vector3());
-      const size = box.getSize(new Vector3()).length();
 
-      camera.position.set(
-        center.x + size * 0.5,
-        center.y + size * 0.5,
-        center.z + size
-      );
+      camera.position.set(0, 0, 5);
+
       camera.lookAt(center);
       camera.updateProjectionMatrix();
     }
