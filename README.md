@@ -24,6 +24,27 @@ npm install
 npm start  
 ```
 
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/rushiraval0/3d-data-viewer-with-GIS.git
+    cd 3d-data-viewer-with-GIS
+    ```
+
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
+
+3. Start the development server:
+    ```sh
+    npm start
+    ```
+
+4. Open your browser and navigate to `http://localhost:3000`.
+
+
 ## Usage  
 1. Click **Point Cloud** or **GeoJSON** to select a mode.  
 2. Upload a **.pcd**, **.xyz**, or **.geojson** file.  
