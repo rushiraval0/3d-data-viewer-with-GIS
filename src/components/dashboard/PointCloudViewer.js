@@ -64,8 +64,8 @@ const PointCloudViewer = ({ data, pointSize, colorMode }) => {
         camera={{
           fov: 60,
           near: 0.1,
-          far: 1000,
-          position: [0, 0, 5],
+          far: 10,
+          position: [0, 0, 3], // Reduced from 5
           up: [0, 0, 1],
         }}
         style={{
@@ -84,7 +84,7 @@ const PointCloudViewer = ({ data, pointSize, colorMode }) => {
           enableDamping
           dampingFactor={0.05}
           minDistance={0.1}
-          maxDistance={1000}
+          maxDistance={100}
           screenSpacePanning={true}
         />
         {fileExtension === "pcd" ? (

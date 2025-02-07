@@ -102,7 +102,7 @@ const XYZViewer = ({ url, pointSize, colorMode }) => {
       );
       const center = box.getCenter(new Vector3());
 
-      camera.position.set(0, 0, 5);
+      camera.position.set(0, 0, 1);
 
       camera.lookAt(center);
       camera.updateProjectionMatrix();
