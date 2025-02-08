@@ -18,12 +18,6 @@ A web-based application to visualize 3D point cloud data and GeoJSON maps. Users
 - **OpenLayers** – GIS visualization  
 - **React.js** – UI framework  
 
-## Setup  
-```sh
-npm install  
-npm start  
-```
-
 ## Installation
 
 1. Clone the repository:
